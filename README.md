@@ -10,5 +10,12 @@ Notes
 
 Setup
 -----
-1. Define an environment variable DATABASE_URL pointing to a file to be created (our SQLite database);
-2. Call `FLASK_APP=src/app.py FLASK_ENV=development flask run` and open in your browser the URL shown at the console.
+1. Assuming that Python 3 is available in your terminal, run (just once):
+    ```
+    python3 -m venv .venv
+    source .venv/bin/activate
+    pip install --upgrade pip
+    pip install --upgrade Flask requests sqlalchemy
+    ```
+2. Define an environment variable DATABASE_URL pointing to a file to be created (our SQLite database);
+3. Call `FLASK_APP=src/app.py FLASK_ENV=development flask run` and open in your browser the URL shown at the console.
